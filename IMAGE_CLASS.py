@@ -9,7 +9,7 @@ st.header(":blue[THIS SITE WILL IDENTIFY OBJECTS BASED ON YOUR GIVEN IMAGE]")
 st.caption("__*LIGHTS ARE YET TO BE TURNED ON*__")
 
 # Create a file uploader widget
-uploaded_file = st.file_uploader(":orange[UPLOAD IMAGE FOR IDENTIFICATION]")
+uploaded_file = st.file_uploader(":orange[UPLOAD ANY IMAGE FOR IDENTIFICATION]")
 
 # Initialize temp_image_path with None
 temp_image_path = None
