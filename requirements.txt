@@ -68,7 +68,6 @@ numpy==1.23.5
 oauthlib==3.2.2
 openai==0.27.8
 opencv-python==4.8.1.78
-cv2
 opt-einsum==3.3.0
 packaging==23.1
 pandas==2.0.2
