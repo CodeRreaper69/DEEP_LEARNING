@@ -23,11 +23,11 @@ if uploaded_file is not None:
 
     img = cv2.imread(temp_image_path)  # object reader
 
-    all_rows = open("E:/ocv/model/synset_words.txt").read().strip().split("\n")
+    all_rows = open("synset_words.txt").read().strip().split("\n")
     classes = [r[r.find(' ')+ 1:] for r in all_rows]
 
     if img is not None:
-        net = cv2.dnn.readNetFromCaffe("E:/ocv/model/bvlc_googlenet.prototxt", "E:/ocv/model/bvlc_googlenet.caffemodel")
+        net = cv2.dnn.readNetFromCaffe("bvlc_googlenet.prototxt", "bvlc_googlenet.caffemodel")
         blob = cv2.dnn.blobFromImage(img, 1, (224, 224))
         net.setInput(blob)
         outp = net.forward()
