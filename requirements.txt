@@ -21,6 +21,7 @@ mdurl==0.1.2
 numpy @ file:///D:/bld/numpy_1694920156760/work/dist/numpy-1.26.0-cp311-cp311-win_amd64.whl#sha256=52e1af97f7d84aafe72cc1aaae3e1c9d52dff69c7ffcc96e2f4f7799fdad7a0c
 opencv-contrib-python==4.8.1.78
 opencv-python==4.8.1.78
+cv2==4.8.1.78
 packaging==23.1
 pandas==2.1.1
 Pillow==10.0.1
