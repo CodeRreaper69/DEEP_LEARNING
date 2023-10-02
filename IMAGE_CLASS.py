@@ -34,7 +34,7 @@ if uploaded_file is not None:
         outp = net.forward()
         idx = np.argsort(outp[0])[::-1][:5]
 
-        b = st.button("GIVE MOST PROBABLE OBJECTS WITH THIER CORRESPONDING PROBABILITY")
+        b = st.button(":red[GET MOST PROBABLE OBJECTS WITH THIER CORRESPONDING PROBABILITY]")
         if b:
             st.balloons()
             for (i, id) in enumerate(idx):
