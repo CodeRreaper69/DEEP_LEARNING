@@ -3,13 +3,13 @@ import numpy as np
 import streamlit as st
 import os
 
-st.set_page_config(page_title="IMAGE_IDENTIFIER_BY_SOURABH", page_icon = ":eye:")
+st.set_page_config(page_title="IMAGE_IDENTIFIER_BY_SOURABH_DEY", page_icon = ":eye:")
 st.title(":green[WELCOME TO OBJECT IDENTIFIER ✅ ]")
 st.header(":blue[THIS SITE WILL IDENTIFY OBJECTS BASED ON YOUR GIVEN IMAGE]")
 st.caption("__*LIGHTS ARE YET TO BE TURNED ON*__")
 
 # Create a file uploader widget
-uploaded_file = st.file_uploader(":orange[UPLOAD IMAGE FOR CLASSIFICATION IDENTIFICATION]")
+uploaded_file = st.file_uploader(":orange[UPLOAD IMAGE FOR IDENTIFICATION]")
 
 # Initialize temp_image_path with None
 temp_image_path = None
@@ -24,11 +24,11 @@ if uploaded_file is not None:
 
     img = cv2.imread(temp_image_path)  # object reader
 
-    all_rows = open("E:/ocv/model/synset_words.txt").read().strip().split("\n")
+    all_rows = open("synset_words.txt").read().strip().split("\n")
     classes = [r[r.find(' ')+ 1:] for r in all_rows]
 
     if img is not None:
-        net = cv2.dnn.readNetFromCaffe("E:/ocv/model/bvlc_googlenet.prototxt", "E:/ocv/model/bvlc_googlenet.caffemodel")
+        net = cv2.dnn.readNetFromCaffe("bvlc_googlenet.prototxt", "bvlc_googlenet.caffemodel")
         blob = cv2.dnn.blobFromImage(img, 1, (224, 224))
         net.setInput(blob)
         outp = net.forward()
