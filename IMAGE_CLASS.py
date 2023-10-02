@@ -49,3 +49,21 @@ else:
 # Clean up: Delete the temporary image file if it exists
 if temp_image_path is not None and os.path.exists(temp_image_path):
     os.remove(temp_image_path)
+
+
+
+
+#about the developer
+with st.expander("CONTACT THE DEVELOPER"):
+    st.write(" [LEARN MORE ABOUT THE DEVELOPER >](https://linktr.ee/sourabhdey)")
+    st.image("SOURABH.jpg",width = 200)
+    contact = """ <form action="https://formsubmit.co/uhddey@gmail.com" method="POST">
+             <input type="text" name="name" placeholder = "YOUR NAME" required>
+             <input type="email" name="email" placeholder = "YOUR EMAIL" required>
+             <textarea name="message" placeholder="Tell us your problem" required></textarea>
+             <button type="submit">Send</button>
+        </form>  """
+
+    
+    st.markdown(contact, unsafe_allow_html=True)
+
