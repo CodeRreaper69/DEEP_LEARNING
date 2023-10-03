@@ -4,7 +4,7 @@ import streamlit as st
 import os
 
 st.set_page_config(page_title="IMAGE_IDENTIFIER_BY_SOURABH_DEY", page_icon = ":eye:")
-st.title(":green[WELCOME TO OBJECT IDENTIFIER ✅ ]")
+st.title(":green[WELCOME TO OBJECT IDENTIFIER :eye: ]")
 st.header(":blue[THIS SITE WILL IDENTIFY OBJECTS BASED ON YOUR GIVEN IMAGE]")
 st.caption("__*LIGHTS ARE YET TO BE TURNED ON*__")
 
